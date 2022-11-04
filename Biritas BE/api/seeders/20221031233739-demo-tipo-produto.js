@@ -4,23 +4,15 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert(
-      'cardapios',
+      'tipo_produtos',
       [
         {
-          id: 1,
-          descricao: 'cardápio de bebidas',
+          categoria: 'bebida',
           createdAt: new Date(),
           updatedAt: new Date()
         },
         {
-          id: 2,
-          descricao: 'cardápio de comida',
-          createdAt: new Date(),
-          updatedAt: new Date()
-        },
-        {
-          id: 3,
-          descricao: 'cardápio misto',
+          categoria: 'comida',
           createdAt: new Date(),
           updatedAt: new Date()
         }
@@ -30,6 +22,11 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete('cardapios', null, {})
+    /**
+     * Add commands to revert seed here.
+     *
+     * Example:
+     * await queryInterface.bulkDelete('People', null, {});
+     */
   }
 }

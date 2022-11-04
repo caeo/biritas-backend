@@ -7,8 +7,24 @@ module.exports = {
       'combos',
       [
         {
-          descr_combo: 'combo 1',
+          id: 1,
+          descr_combo: 'combo bebidas 1',
           FK_cardapio: 1,
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+
+        {
+          id: 2,
+          descr_combo: 'combo comidas 1',
+          FK_cardapio: 1,
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+        {
+          id: 3,
+          descr_combo: 'combo misto',
+          FK_cardapio: 3,
           createdAt: new Date(),
           updatedAt: new Date()
         }

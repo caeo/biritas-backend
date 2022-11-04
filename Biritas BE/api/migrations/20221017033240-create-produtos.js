@@ -31,6 +31,11 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: { model: 'cardapios', key: 'id' }
       },
+      FK_produto: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'produtos', key: 'id' }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

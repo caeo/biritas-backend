@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
       produtos.belongsTo(models.combo, {
         foreignKey: 'FK_combo'
       })
-      produtos.hasMany(models.tipo_produto, {
+      produtos.belongsTo(models.tipo_produtos, {
         foreignKey: 'FK_produto'
       })
       produtos.hasMany(models.TA_vende, {
